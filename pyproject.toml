@@ -1,0 +1,13 @@
+[project]
+name = "airdrop-analytics-cli"
+version = "0.1.0"
+description = "Compute simple holder distribution metrics (top-N, deciles, Gini) and export CSV/JSON."
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "click>=8.1",
+  "rich>=13.0"
+]
+
+[project.scripts]
+airdrop-cli = "airdrop_analytics.__main__:cli"
